@@ -2,8 +2,7 @@
 def line(katz_deli)
   if katz_deli.length > 0
     katz_deli.each_with_index {|customer, position|
-      puts position
-      puts customer
+      puts "#{position+1}. #{customer} "
     }
   end
 end
