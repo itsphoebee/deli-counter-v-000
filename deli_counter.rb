@@ -5,6 +5,7 @@ def line(katz_deli)
       current_line << "#{position+1}. #{customer} "
 }
   return current_line
+  binding.pry
 end
 
 def take_a_number(katz_deli, name)
