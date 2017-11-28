@@ -1,7 +1,8 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.each_with_index {|customer, position|
-      puts take_a_number(katz_deli, customer)[position]
+  if katz_deli.length > 0
+    katz_deli.each_with_index {|customer, position|
+      puts position
       puts customer
     }
   end
