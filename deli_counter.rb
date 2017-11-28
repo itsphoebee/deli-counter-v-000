@@ -1,6 +1,6 @@
 # Write your code here.
 
-def line[katz_deli]
+def line(katz_deli)
 
 end
 
