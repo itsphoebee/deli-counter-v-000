@@ -4,9 +4,9 @@ def line[katz_deli]
 
 end
 
-def take_a_number(katz_deli, "name")
+def take_a_number(katz_deli)
+  line_position = []
   katz_deli.each_with_index {|customer, position|
-    katz_deli[customer] = position
-  return "Welcome, #{name}. You are number #{position +1} in line."
+    line_position << "Welcome, #{customer}. You are number #{position+1} in line."
 }
 end
