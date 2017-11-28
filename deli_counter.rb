@@ -1,14 +1,6 @@
 # Write your code here.
 katz_deli = []
 
-def line(katz_deli)
-  if katz_deli.length == 0
-    puts "The line is currently empty."
-  else
-
-  end
-end
-
 def take_a_number(katz_deli, name)
   line_position = []
   katz_deli << name
@@ -18,5 +10,18 @@ def take_a_number(katz_deli, name)
 return line_position
 end
 
-def now_serving
+def line(katz_deli)
+  if katz_deli.length == 0
+    puts "The line is currently empty."
+  else
+    return katz_deli.each_with_index {|customer, position|
+      puts position+1
+      puts take_a_number(katz_deli, customer)[position]
+    }
+  end
+end
+
+
+def now_serving(katz_deli)
+  return "Currently serving #{katz_deli[0]}."
 end
