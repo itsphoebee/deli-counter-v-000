@@ -1,8 +1,8 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli == 0
+  if katz_deli.length == 0
     puts "The line is currently empty."
-  else
+  elsif
     current_line=[]
     katz_deli.each_with_index {|customer, position|
       current_line << " #{position+1}. #{customer}"
