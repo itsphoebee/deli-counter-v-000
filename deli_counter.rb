@@ -4,7 +4,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
 
-    katz_deli.each_with_index{|customers,position|puts position}.zip(katz_deli)
+    katz_deli.each_with_index{|customers,position|puts position+1}.zip(katz_deli)
   end
 end
 
