@@ -1,7 +1,8 @@
 # Write your code here.
 
 def line(katz_deli)
-
+  katz_deli.length == 0
+  return "There is nobody in line"
 end
 
 def take_a_number(katz_deli)
