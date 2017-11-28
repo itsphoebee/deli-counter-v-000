@@ -3,9 +3,8 @@ def line(katz_deli)
     current_line=[]
     katz_deli.each_with_index {|customer, position|
       current_line << "#{position+1}. #{customer} "
-}
-  return current_line
-  binding.pry
+    }
+  return "The line is currently" << current_line
 end
 
 def take_a_number(katz_deli, name)
