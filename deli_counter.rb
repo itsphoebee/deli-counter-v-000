@@ -2,7 +2,7 @@
 
 def line(katz_deli)
   katz_deli.length == 0
-  return "There is nobody in line"
+  return "The line is currently empty."
 end
 
 def take_a_number(katz_deli)
