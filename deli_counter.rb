@@ -7,7 +7,7 @@ def line(katz_deli)
       puts number + 1
       puts take_a_number(katz_deli, customers)[number]
       }
-  
+
   end
 end
 
