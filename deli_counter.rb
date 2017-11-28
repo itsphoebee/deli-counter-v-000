@@ -5,9 +5,9 @@ def line(katz_deli)
   else
     current_line=[]
     katz_deli.each_with_index {|customer, position|
-      current_line << "#{position+1}. #{customer} "
+      current_line << " #{position+1}. #{customer}"
     }
-    puts "The line is currently: "<<(current_line).join
+    puts "The line is currently:"<<(current_line).join
   end
 end
 
