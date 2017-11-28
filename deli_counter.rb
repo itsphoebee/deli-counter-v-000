@@ -5,6 +5,7 @@ def line(katz_deli)
   else
 
     katz_deli.each_with_index{|customers,position|
+      return "The line is currently:"
       puts position+1
       puts katz_deli[position]
     }
