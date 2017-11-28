@@ -1,9 +1,6 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.length == 0
-    puts "The line is currently empty."
-  else
-    katz_deli.each_with_index {|customer, position|
+  if katz_deli.each_with_index {|customer, position|
       puts take_a_number(katz_deli, customer)[position]
       puts customer
     }
