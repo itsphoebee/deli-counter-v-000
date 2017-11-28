@@ -11,7 +11,7 @@ end
 
 def take_a_number(katz_deli, name)
   line_position = []
-  katz_deli << "name"
+  katz_deli << name
   katz_deli.each_with_index {|customer, position|
     line_position << "Welcome, #{customer}. You are number #{position+1} in line."
 }
