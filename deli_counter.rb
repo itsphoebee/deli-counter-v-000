@@ -5,6 +5,7 @@ def line(katz_deli)
     katz_deli.each_with_index {|customer, position|
       current_line << "#{position+1}. #{customer} "
 }
+  return current_line
   end
 end
 
