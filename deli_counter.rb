@@ -12,7 +12,7 @@ end
 def take_a_number(katz_deli, name)
   line_position = []
   katz_deli << name
-    puts "Welcome, #{name}. You are number #{katz_deli.index(name)} in line."
+    puts "Welcome, #{name}. You are number #{katz_deli.index(name)+1} in line."
   katz_deli.each_with_index {|customer, position|
     line_position << "Welcome, #{customer}. You are number #{position+1} in line."
 }
