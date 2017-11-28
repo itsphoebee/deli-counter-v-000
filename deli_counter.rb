@@ -5,7 +5,7 @@ def line(katz_deli)
   if katz_deli.length == 0
     puts "The line is currently empty."
   else
-    now_serving(katz_deli)
+    take_a_number(katz_deli, name)
     puts "The line is currently: "
   end
 end
