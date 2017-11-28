@@ -15,6 +15,7 @@ def line(katz_deli)
     puts "The line is currently empty."
   else
     katz_deli.each_with_index {|customer, position|
+      return "The line is currently:"
       puts position+1
       puts take_a_number(katz_deli, customer)[position]
     }
