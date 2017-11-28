@@ -5,7 +5,8 @@ def line(katz_deli)
   else
 
     katz_deli.each_with_index{|customers,position|
-      return "The line is currently: #{puts position+1
+      return "The line is currently:
+      #{puts position+1
       puts katz_deli[position]} "
   }
   end
@@ -23,10 +24,7 @@ end
 
 
 def now_serving(katz_deli)
-  if katz_deli.length == 0
-    puts "There is nobody waiting to be served!"
-  else
-    puts "Currently serving #{katz_deli[0]}."
+  katz_deli.length == 0 ? puts "There is nobody waiting to be served!" : puts "Currently serving #{katz_deli[0]}."
   katz_deli.shift
   end
 end
