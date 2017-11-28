@@ -9,4 +9,5 @@ def take_a_number(katz_deli)
   katz_deli.each_with_index {|customer, position|
     line_position << "Welcome, #{customer}. You are number #{position+1} in line."
 }
+return line_position
 end
