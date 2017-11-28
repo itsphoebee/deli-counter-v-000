@@ -6,7 +6,7 @@ def line(katz_deli)
 
     katz_deli.each_with_index{|customers,position|
       puts position+1
-      puts customers
+      puts katz_deli[position]
     }
   end
 end
