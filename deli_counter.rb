@@ -1,12 +1,10 @@
 # Write your code here.
 def line(katz_deli)
-  if katz_deli.length > 0
     current_line=[]
     katz_deli.each_with_index {|customer, position|
       current_line << "#{position+1}. #{customer} "
 }
   return current_line
-  end
 end
 
 def take_a_number(katz_deli, name)
